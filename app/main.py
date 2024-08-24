@@ -1,3 +1,8 @@
 import streamlit as st
+import pandas as pd
 
-st.title("EDA Dashboard")
+# Load data
+df = pd.read_csv("C:\Users\kedir\Downloads\data\data\benin-malanville.csv")
+
+# Display the data
+st.write(df.head())
